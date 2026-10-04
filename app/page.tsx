@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { programs } from "@/data/programs";
+import { programs } from "../data/programs";
 
 export default function Home() {
   return (
