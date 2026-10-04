@@ -109,8 +109,8 @@ export default async function ProgramPage({ params }: { params: Promise<{ slug: 
             <p className="muted">Apply, mentor the next cohort, or contact the Wiki Club team.</p>
             <div style={{display:"flex",justifyContent:"center",gap:12,flexWrap:"wrap",marginTop:24}}>
               <a href={program.applyUrl} style={{background:"var(--accent)",color:"#101010",padding:"14px 22px",borderRadius:999,fontWeight:800}}>{program.applyLabel}</a>
-              <a href="mailto:hello@example.com?subject=Become a mentor" className="glass" style={{padding:"14px 22px",borderRadius:999}}>Become a mentor</a>
-              <a href="mailto:hello@example.com?subject=Program enquiry" className="glass" style={{padding:"14px 22px",borderRadius:999}}>Contact us</a>
+              <a href="mailto:wikiclub@united.edu.in?subject=Become a mentor" className="glass" style={{padding:"14px 22px",borderRadius:999}}>Become a mentor</a>
+              <a href="mailto:wikiclub@united.edu.in?subject=Program enquiry" className="glass" style={{padding:"14px 22px",borderRadius:999}}>Contact us</a>
             </div>
           </div>
         </div>
