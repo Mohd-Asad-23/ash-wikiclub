@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { programs } from "@/data/programs";
+import { programs } from "../../../data/programs";
 
 export function generateStaticParams() {
   return Object.keys(programs).map((slug) => ({ slug }));
