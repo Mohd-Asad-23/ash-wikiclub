@@ -17,9 +17,9 @@ export default async function ProgramPage({ params }: { params: Promise<{ slug: 
           <p className="eyebrow">Wiki Club • Program</p>
           <h1 style={{fontSize:"clamp(3.2rem,8vw,7rem)",lineHeight:.92,margin:"18px 0"}}>{program.title}</h1>
           <p className="muted" style={{fontSize:"1.3rem",maxWidth:760}}>{program.tagline}</p>
-          <div style={{display:"flex",gap:12,marginTop:30,flexWrap:"wrap"}}>
-            <a href={program.applyUrl} style={{background:"var(--accent)",color:"#101010",padding:"14px 20px",borderRadius:999,fontWeight:800}}>{program.applyLabel} ↗</a>
-            <a href="#about" className="glass" style={{padding:"14px 20px",borderRadius:999}}>Explore program ↓</a>
+          <div className="button-row">
+            <a href={program.applyUrl} className="primary-button">{program.applyLabel} ↗</a>
+            <a href="#about" className="secondary-button">Explore program ↓</a>
           </div>
         </div>
       </section>
@@ -27,7 +27,7 @@ export default async function ProgramPage({ params }: { params: Promise<{ slug: 
       <section id="about" className="section">
         <div className="container">
           <p className="eyebrow">01 • About Program</p>
-          <div style={{display:"grid",gridTemplateColumns:"2fr 1fr",gap:40}}>
+          <div className="program-grid-2">
             <div>
               <h2 style={{fontSize:"2.6rem"}}>What is {program.title}?</h2>
               <p className="muted" style={{fontSize:"1.1rem",lineHeight:1.8}}>{program.about}</p>
@@ -108,9 +108,9 @@ export default async function ProgramPage({ params }: { params: Promise<{ slug: 
             <h2 style={{fontSize:"clamp(2.5rem,6vw,5rem)",margin:"14px 0"}}>Your road to the next contribution starts here.</h2>
             <p className="muted">Apply, mentor the next cohort, or contact the Wiki Club team.</p>
             <div style={{display:"flex",justifyContent:"center",gap:12,flexWrap:"wrap",marginTop:24}}>
-              <a href={program.applyUrl} style={{background:"var(--accent)",color:"#101010",padding:"14px 22px",borderRadius:999,fontWeight:800}}>{program.applyLabel}</a>
-              <a href="mailto:hello@example.com?subject=Become a mentor" className="glass" style={{padding:"14px 22px",borderRadius:999}}>Become a mentor</a>
-              <a href="mailto:hello@example.com?subject=Program enquiry" className="glass" style={{padding:"14px 22px",borderRadius:999}}>Contact us</a>
+              <a href={program.applyUrl} className="primary-button">{program.applyLabel}</a>
+              <a href="mailto:wikiclub@united.edu.in?subject=Become a mentor" className="secondary-button">Become a mentor</a>
+              <a href="mailto:wikiclub@united.edu.in?subject=Program enquiry" className="secondary-button">Contact us</a>
             </div>
           </div>
         </div>
